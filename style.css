@@ -1,0 +1,133 @@
+/* ===============================
+   USER MANAGEMENT — SIMPLE UI
+================================ */
+
+:root {
+  --bg: #f5f7fb;
+  --panel: #ffffff;
+  --primary: #2563eb;
+  --primary-light: #e7efff;
+  --border: #e5e7eb;
+  --text: #1f2937;
+  --muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  margin: 0;
+}
+
+/* PAGE */
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* CARDS */
+.cards-row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.card-container {
+  flex: 1;
+  padding: 16px;
+  background: white;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+}
+
+.card-container h2 {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.card-container p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* TOOLBAR */
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.toolbar input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+#createBtn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--primary);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* USER FORM */
+#userForm {
+  background: white;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+}
+
+#userForm input {
+  width: 100%;
+  padding: 9px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+#addUserBtn {
+  display: block;
+  margin: auto;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background: var(--primary);
+}
+
+.hidden {
+  display: none;
+}
+
+/* TABLE */
+#userTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+#userTable th,
+#userTable td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#userTable thead {
+  background: #f1f4ff;
+}
+

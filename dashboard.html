@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="sidebar-logo">Auto Crafter</h2>
+
+    <ul class="side-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="user.html">User Management</a></li>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <h2 class="page-title">Dashboard Overview</h2>
+
+    <div class="card-container">
+      <h3>Active Users</h3>
+      <p class="count">150</p>
+    </div>
+
+    <div class="card-container">
+      <h3>Total Users</h3>
+      <p class="count">1000</p>
+    </div>
+
+  </main>
+
+</div>
+
+<script>
+function logout() {
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

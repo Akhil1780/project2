@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CONNECT CSS FILE -->
+ <link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="style.css">
+
+
+  <title>User Management</title>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="sidebar-logo">Auto Crafter</h2>
+
+    <ul class="side-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a class="active" href="user.html">User Management</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <div class="page">
+
+      <!-- CARDS -->
+      <div class="cards-row">
+
+        <div class="card-container">
+          <h2>Active Users</h2>
+          <p>Total Active Users: 150</p>
+        </div>
+
+        <div class="card-container">
+          <h2>Total Users</h2>
+          <p>Total Users: 1000</p>
+        </div>
+
+      </div>
+
+      <!-- TOOLBAR -->
+      <div class="toolbar">
+        <input type="text" id="searchInput" placeholder="Search by users">
+        <button id="createBtn">Create User</button>
+      </div>
+
+      <!-- USER FORM -->
+      <div id="userForm" class="hidden">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="tel" id="phone" placeholder="Phone Number">
+        <input type="text" id="country" placeholder="Country">
+        <button id="addUserBtn">Add User</button>
+      </div>
+
+      <!-- TABLE -->
+      <table id="userTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Country</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+    </div>
+
+  </main>
+</div>
+
+<script>
+function logout() {
+  window.location.href = "index.html";
+}
+</script>
+
+<script src="userscript.js"></script>
+
+</body>
+</html>
